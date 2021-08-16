@@ -34,7 +34,7 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            long actual = calculator.Add(1M, 2M, 3M, 4M, 5M, 10000000000M);
+            long actual = calculator.Add(1L, 2L, 3L, 4L, 5L, 10000000000L);
 
             var expected = 10000000015M;
 
@@ -71,7 +71,7 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            long actual = calculator.Multiply(10M, 20M, 30M, 40M);
+            long actual = calculator.Multiply(10L, 20L, 30L, 40L);
 
             var expected = 240000M;
 

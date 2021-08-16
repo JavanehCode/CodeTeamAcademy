@@ -10,7 +10,10 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            int actual = calculator.Add(100, 200);
+            int a = 100;
+            int b = 200;
+
+            int actual = calculator.Add(a, b);
 
             var expected = 300;
 
@@ -22,11 +25,14 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            double actual = calculator.Add(10.3D, 20.2D);
+            double a = 10.3D;
+            double b = 20.2D;
+
+            double actual = calculator.Add(a, b);
 
             var expected = 30.5D;
 
-            Assert.AreEqual(expected, actual);  
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
@@ -34,7 +40,10 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            long actual = calculator.Add(10000000000, 20000000000);
+            long a = 10000000000;
+            long b = 20000000000;
+
+            long actual = calculator.Add(a, b);
 
             var expected = 30000000000;
 
@@ -47,7 +56,10 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            int actual = calculator.Multiply(200, 300);
+            int a = 200;
+            int b = 300;
+
+            int actual = calculator.Multiply(a, b);
 
             var expected = 60000;
 
@@ -59,7 +71,10 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            double actual = calculator.Multiply(200.2, 300.456);
+            double a = 200.2;
+            double b = 300.456;
+
+            double actual = calculator.Multiply(a, b);
 
             var expected = 60151.2912D;
 
@@ -72,7 +87,10 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            long actual = calculator.Multiply(222M, 12000000000);
+            long a = 222;
+            long b = 12000000000;
+
+            long actual = calculator.Multiply(a, b);
 
             var expected = 2664000000000;
 
@@ -84,7 +102,10 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            (int quotient, int remainder) = calculator.Divide(23, 4);
+            int a = 23;
+            int b = 4;
+
+            (int quotient, int remainder) = calculator.Divide(a, b);
 
             var expectedQuotient = 5;
             var expectedRemainder = 3;
@@ -94,11 +115,14 @@ namespace Calculator.Tests
         }
 
         [TestMethod]
-        public void DivideIntegers()
+        public void DivideLongs()
         {
             MyCalculator calculator = new MyCalculator();
 
-            (long quotient, long remainder) = calculator.Divide(10000000002, 4);
+            long a = 10000000002;
+            long b = 4;
+
+            (long quotient, long remainder) = calculator.Divide(a, b);
 
             var expectedQuotient = 2500000000;
             var expectedRemainder = 2;
@@ -112,7 +136,10 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            int actual = calculator.Subtract(100, 200);
+            int a = 100;
+            int b = 200;
+
+            int actual = calculator.Subtract(a, b);
 
             var expected = -100;
 
@@ -124,7 +151,10 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            double actual = calculator.Add(300D, 200D);
+            double a = 300D;
+            double b = 200D;
+
+            double actual = calculator.Subtract(a, b);
 
             var expected = 100D;
 
@@ -136,7 +166,10 @@ namespace Calculator.Tests
         {
             MyCalculator calculator = new MyCalculator();
 
-            long actual = calculator.Add(1000M, 1020M);
+            long a = 1000;
+            long b = 1020;
+
+            long actual = calculator.Subtract(a, b);
 
             var expected = -20M;
 
