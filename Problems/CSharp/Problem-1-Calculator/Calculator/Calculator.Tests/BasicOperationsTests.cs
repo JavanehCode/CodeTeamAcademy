@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 
 namespace Calculator.Tests
 {
@@ -174,6 +175,17 @@ namespace Calculator.Tests
             var expected = -20M;
 
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void DivideByZeroShouldThrowException()
+        {
+            MyCalculator calculator = new MyCalculator();
+
+            int a = 5;
+            int b = 0;
+
+            Assert.ThrowsException<DivideByZeroException>(() => calculator.Divide(a, b));
         }
     }
 }
