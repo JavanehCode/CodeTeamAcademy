@@ -16,10 +16,11 @@ Items to calcualte from sells records:
 
 Sample file content:
 
-1 | 10003 | 20000 | 40
-2 | 10005 | 800 | 100
-3 | 10003 | 5600 | 20
-4 | 10002 | 6300 | 8000
-5 | 10008 | 420 | 700
-
-#task
+```
+RecordNumber | ProductId  | Price | Quantity
+1            | 10003      | 20000 | 40
+2            | 10005      | 800   | 100
+3            | 10003      | 5600  | 20
+4            | 10002      | 6300  | 8000
+5            | 10008      | 420   | 700
+```
